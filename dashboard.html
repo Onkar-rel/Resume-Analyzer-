@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer | Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-logo">ResumeAnalyzer</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="how-it-works.html">Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#upload">Upload</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+    <a class="btn-primary nav-btn" href="index.html#upload">Upload</a>
+</nav>
+
+<section class="page-hero">
+    <div class="page-hero-content">
+        <h1>Your Resume Dashboard</h1>
+        <p>Track scores, save reports, and see improvements over time. This is a front-end demo using mock data.</p>
+        <div class="hero-buttons">
+            <a class="btn-primary" href="index.html#upload">Analyze New Resume</a>
+            <a class="btn-secondary" href="report.html">View Sample Report</a>
+        </div>
+    </div>
+    <div class="page-hero-card">
+        <div class="mini-stat">
+            <span>Avg Score</span>
+            <strong id="avgScore">82%</strong>
+        </div>
+        <div class="mini-stat">
+            <span>Reports Saved</span>
+            <strong id="reportCount">6</strong>
+        </div>
+        <div class="mini-stat">
+            <span>Last Check</span>
+            <strong id="lastCheck">2 days ago</strong>
+        </div>
+    </div>
+</section>
+
+<section class="dashboard-grid">
+    <div class="dashboard-card">
+        <h2>Recent Analyses</h2>
+        <ul class="list-cards" id="recentList"></ul>
+    </div>
+    <div class="dashboard-card">
+        <h2>Score Trends</h2>
+        <div class="trend-grid" id="trendGrid"></div>
+    </div>
+    <div class="dashboard-card">
+        <h2>Saved Reports</h2>
+        <div class="table-wrap">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Score</th>
+                        <th>Keywords</th>
+                        <th>Created</th>
+                    </tr>
+                </thead>
+                <tbody id="reportsTable"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="dashboard-card">
+        <h2>Quick Actions</h2>
+        <div class="action-grid">
+            <a class="action-card" href="index.html#upload">Upload Resume</a>
+            <a class="action-card" href="report.html">Generate Report</a>
+            <a class="action-card" href="pricing.html">Upgrade Plan</a>
+            <a class="action-card" href="contact.html">Ask Support</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Resume Analyzer &#169; 2026 | Academic Project</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer | Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-logo">ResumeAnalyzer</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="how-it-works.html">Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#upload">Upload</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+    <a class="btn-primary nav-btn" href="index.html#upload">Upload</a>
+</nav>
+
+<section class="page-hero">
+    <div class="page-hero-content">
+        <h1>Report Detail</h1>
+        <p>A clean, recruiter-friendly report that summarizes skills, ATS score, and improvements.</p>
+        <div class="hero-buttons">
+            <button class="btn-primary" id="printReportBtn">Download PDF</button>
+            <a class="btn-secondary" href="dashboard.html">Back to Dashboard</a>
+        </div>
+    </div>
+    <div class="page-hero-card score-card">
+        <span>ATS Score</span>
+        <strong id="reportScore">82%</strong>
+        <p>Target Role: Frontend Developer</p>
+    </div>
+</section>
+
+<section class="report-detail">
+    <div class="report-summary">
+        <h2>Summary</h2>
+        <p>
+            Your resume is well-structured and uses role-specific keywords. Strengthen impact with metrics
+            and highlight testing practices to improve ATS match.
+        </p>
+        <div class="chip-row" id="summaryChips">
+            <span class="chip">Readable format</span>
+            <span class="chip">Role-aligned keywords</span>
+            <span class="chip">Needs quantified results</span>
+        </div>
+    </div>
+
+    <div class="report-columns">
+        <div class="report-card">
+            <h3>Strengths</h3>
+            <ul id="reportStrengths">
+                <li>Strong JavaScript fundamentals</li>
+                <li>Clear project structure</li>
+                <li>UI-focused keywords present</li>
+            </ul>
+        </div>
+        <div class="report-card">
+            <h3>Improvements Needed</h3>
+            <ul id="reportImprovements">
+                <li>Add testing frameworks (Jest)</li>
+                <li>Quantify UI performance impact</li>
+                <li>Highlight accessibility work</li>
+            </ul>
+        </div>
+        <div class="report-card">
+            <h3>Keyword Match</h3>
+            <ul id="reportKeywords">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>CSS</li>
+                <li>REST APIs</li>
+            </ul>
+        </div>
+        <div class="report-card">
+            <h3>Format Issues</h3>
+            <ul id="reportFormats">
+                <li>Summary too long</li>
+                <li>Inconsistent section titles</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Want a fresh score?</h2>
+    <div class="cta-actions">
+        <a class="btn-primary" href="index.html#upload">Upload Resume Now</a>
+        <a class="btn-secondary cta-secondary" href="pricing.html">See Pricing</a>
+    </div>
+</section>
+
+<footer>
+    <p>Resume Analyzer &#169; 2026 | Academic Project</p>
+</footer>
+</body>
+</html>

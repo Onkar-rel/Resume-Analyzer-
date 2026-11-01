@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer | Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-logo">ResumeAnalyzer</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="how-it-works.html">Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#upload">Upload</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+    <a class="btn-primary nav-btn" href="index.html#upload">Upload</a>
+</nav>
+
+<section class="page-hero">
+    <div class="page-hero-content">
+        <h1>Contact Support</h1>
+        <p>Have a question or want feedback on your resume? Drop a message.</p>
+        <div class="hero-buttons">
+            <a class="btn-primary" href="index.html#upload">Analyze Resume</a>
+            <a class="btn-secondary" href="pricing.html">Pricing</a>
+        </div>
+    </div>
+    <div class="page-hero-card">
+        <span>Response Time</span>
+        <strong>24 Hours</strong>
+        <p>Average reply time for demo support.</p>
+    </div>
+</section>
+
+<section class="contact-grid">
+    <div class="contact-card">
+        <h2>Send a message</h2>
+        <form id="contactForm">
+            <label for="name">Full name</label>
+            <input id="name" type="text" placeholder="Your name">
+
+            <label for="email">Email address</label>
+            <input id="email" type="email" placeholder="you@example.com">
+
+            <label for="topic">Topic</label>
+            <select id="topic">
+                <option value="general">General</option>
+                <option value="feedback">Resume feedback</option>
+                <option value="pricing">Pricing</option>
+                <option value="bug">Report a bug</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your resume or question."></textarea>
+
+            <p class="form-status" id="formStatus">We will never share your email.</p>
+            <button class="btn-primary" type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="contact-card">
+        <h2>Other ways to reach us</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@resumeanalyzer.demo</p>
+            <p><strong>LinkedIn:</strong> Resume Analyzer Team</p>
+            <p><strong>Hours:</strong> Mon - Fri, 9am to 6pm</p>
+        </div>
+        <div class="contact-highlight">
+            <h3>Need urgent help?</h3>
+            <p>Share your resume and target role. We can suggest quick fixes.</p>
+            <a class="btn-secondary" href="report.html">View Sample Report</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Resume Analyzer &#169; 2026 | Academic Project</p>
+</footer>
+</body>
+</html>
